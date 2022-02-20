@@ -6,7 +6,14 @@ import 'fontsource-roboto';
 function App() {
   return (
     <Container component="article" maxWidth="sm">
-    <Typography variant="h3" component="h1" align='center'>Formulário de cadastro</Typography>
+    <Typography 
+      variant="h3" 
+      component="h1" 
+      align='center'
+      sx={{
+        marginTop: 5
+      }}
+      >Formulário de cadastro</Typography>
     <FormularioCadastro 
       aoEnviar={aoEnviarFormulario}
       validarCPF={validarCPF}
