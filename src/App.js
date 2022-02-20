@@ -23,7 +23,7 @@ function App() {
       <FormularioCadastro 
         aoEnviar={aoEnviarFormulario}
       />
-      </ValidacoesCadastro.Provider>
+    </ValidacoesCadastro.Provider>
     </Container>
   );
 }
