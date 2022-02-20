@@ -1,21 +1,30 @@
 import { Button, TextField } from '@mui/material';
 import React from 'react';
 
-function DadosUsuario() {
+function DadosUsuario({aoEnviar}) {
     return (
-        <form>
+        <form
+            onSubmit={
+                e => {
+                    e.preventDefault();
+                    aoEnviar();
+                }
+            }
+        >
             <TextField
                 id='email'
-                label='email'
+                label='Email'
                 type='email'
+                required
                 variant="outlined" 
                 fullWidth 
                 margin='normal'
             />
             <TextField
                 id='senha'
-                label='senha'
+                label='Senha'
                 type='password'
+                required
                 variant="outlined" 
                 fullWidth 
                 margin='normal'

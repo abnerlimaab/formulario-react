@@ -8,6 +8,7 @@ function DadosEntrega() {
                 id='cep'
                 label='CEP'
                 type='number'
+                required
                 variant="outlined" 
                 fullWidth 
                 margin='normal'
@@ -16,6 +17,7 @@ function DadosEntrega() {
                 id='endereco'
                 label='Endereço'
                 type='text'
+                required
                 variant="outlined" 
                 fullWidth 
                 margin='normal'
@@ -23,6 +25,7 @@ function DadosEntrega() {
             <TextField
                 id='numero'
                 label='Número'
+                required
                 type='number'
                 variant="outlined" 
                 margin='normal'
@@ -31,6 +34,7 @@ function DadosEntrega() {
                 id='estado'
                 label='Estado'
                 type='text'
+                required
                 variant="outlined" 
                 margin='normal'
             />
@@ -38,11 +42,13 @@ function DadosEntrega() {
                 id='cidade'
                 label='Cidade'
                 type='text'
+                required
                 variant="outlined" 
                 margin='normal'
             />
             <Button
                 type='submit' 
+                required
                 variant='contained' 
                 color='primary'
                 fullWidth
